@@ -20,6 +20,7 @@ const App = () => {
           {/* Public Route */}
           <Route path="/user-book-management" element={<UserBookManagement />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/book-details/:id" element={<BookDetails />} />
 
           {/* Protected Routes for Admin Only */}
           <Route
@@ -46,14 +47,14 @@ const App = () => {
               </ProtectedRoute>
             }
           />
-          <Route
+          {/* <Route
             path="/book-details/:id"
             element={
               <ProtectedRoute>
                 <BookDetails />
               </ProtectedRoute>
             }
-          />
+          /> */}
           
         </Routes>
       </Router>
