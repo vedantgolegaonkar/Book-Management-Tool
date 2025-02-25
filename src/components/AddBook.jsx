@@ -8,7 +8,7 @@ const AddBook = () => {
   const [book, setBook] = useState({
     title: "",
     author: "",
-    type: "",
+    type_of_book: "",
     genre: "",
     publication: "",
     pages: "",
@@ -54,7 +54,7 @@ const AddBook = () => {
       {
         title: book.title,
         author: book.author,
-        type: book.type,
+        type_of_book: book.type,
         genre: book.genre,
         publication: book.publication,
         pages: book.pages,
@@ -74,7 +74,7 @@ const AddBook = () => {
       setBook({
         title: "",
         author: "",
-        type: "",
+        type_of_book: "",
         genre: "",
         publication: "",
         pages: "",
@@ -126,7 +126,7 @@ const AddBook = () => {
             name="type"
             value={book.type}
             onChange={handleChange}
-            placeholder="Type of Book"
+            placeholder="Type"
             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
             required
           />
