@@ -54,7 +54,7 @@ const AddBook = () => {
       {
         title: book.title,
         author: book.author,
-        type_of_book: book.type,
+        type_of_book: book.type_of_book,
         genre: book.genre,
         publication: book.publication,
         pages: book.pages,
@@ -123,7 +123,7 @@ const AddBook = () => {
         <div className="grid grid-cols-2 gap-4">
           <input
             type="text"
-            name="type"
+            name="type_of_book"
             value={book.type_of_book}
             onChange={handleChange}
             placeholder="Type of Book"

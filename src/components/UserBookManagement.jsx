@@ -65,7 +65,7 @@ const UserBookManagement = () => {
                 </td>
                 <td className="p-3">{book.title}</td>
                 <td className="p-3">{book.author}</td>
-                <td className="p-3">{book.type}</td>
+                <td className="p-3">{book.type_of_book}</td>
                 <td className="p-3">{book.genre}</td>
                 <td className="p-3">{book.publication}</td>
                 <td className="p-3">{book.pages}</td>
