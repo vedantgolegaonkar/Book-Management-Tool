@@ -124,9 +124,9 @@ const AddBook = () => {
           <input
             type="text"
             name="type"
-            value={book.type}
+            value={book.type_of_book}
             onChange={handleChange}
-            placeholder="Type"
+            placeholder="Type of Book"
             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
             required
           />
